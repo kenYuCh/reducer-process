@@ -1,4 +1,4 @@
-# Basic operation and process of reducer
+# Basic operation and process of reducer for @reduxjs/toolkit
 
 ### Step1 - Reducer (./store/) :
 
