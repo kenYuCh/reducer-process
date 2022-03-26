@@ -1,6 +1,7 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { Provider, useSelector, useDispatch } from 'react-redux'
 import { addToCart, removeFromCart } from '../store/cart-reducer'
+import store from '../store/index'
 const data = {
   id:1,
   name: 'apple',
@@ -16,10 +17,12 @@ function Shop() {
   }
 
   return (
+    <Provider store={store}>
     <div>
       <h5>shop</h5>
       <button onClick={() => handleBuy()}> Buy </button>
     </div>
+    </Provider>
   )
 }
 
