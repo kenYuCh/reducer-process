@@ -1,0 +1,30 @@
+
+.movie-content {
+    display: flex;
+}
+
+
+
+.movie-card {
+    margin-right: 5px;
+}
+.movie-control {
+    display: flex;
+    margin: 10px 0px;
+}
+.movie-switch-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.movie-switch-pages input, label {
+    width: 50px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.movie-switch-pages button {
+    margin: 0px 15px;
+}

@@ -7,17 +7,18 @@ const shopCrud = createSlice({
     },
     reducers: {
         create(state, action) {
+            state.items = action.payload;
             // ex:
-            const newItem = action.payload;
-            const existingItem = state.items.find((item) => item.id === newItem.id);
-            if (existingItem) {
-                return "data existing"
-            }else {
-                state.items.push({
-                    id: newItem.id,
-                    title: newItem.title
-                })
-            }
+            // const newItem = action.payload;
+            // const existingItem = state.items.find((item) => item.id === newItem.id);
+            // if (existingItem) {
+            //     return "data existing"
+            // }else {
+            //     state.items.push({
+            //         id: newItem.id,
+            //         title: newItem.title
+            //     })
+            // }
 
         },
         read(state, action) { 
